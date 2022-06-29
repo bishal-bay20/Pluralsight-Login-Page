@@ -1,0 +1,164 @@
+body{
+    font-family: sans-serif;
+    font-weight: 300px;
+    background-color: black;
+    color: #FFF;
+    overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 300px;
+}
+.logo img{
+    width: 200px;
+    height: 50px;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+}
+#left{
+display: flex;
+flex-direction: column;
+flex: 1;
+justify-content: center;
+align-items: center;
+height: 500px;
+}
+#right{
+flex: 1;
+}
+/* sign in*/
+#signin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+#signin form{
+    width: 80%;
+    padding-bottom: 1rem;
+
+}
+#signin .logo{
+    margin-bottom: 50px;
+}
+ #signin label{
+    font-size: 20px;
+    line-height: 10px;
+    font-weight: 500px;
+  
+ }
+ #signin .input{
+    margin-bottom: 1.3rem;
+      width: 100%;
+      border-radius: 2px;
+      background: #181818;
+      color: #CCC;
+      padding: 8px;
+      line-height: 10px;
+ }
+ #signin .sec-btn,
+ .or,
+ .link {
+   text-align: center;
+ margin-bottom: 5px;
+ 
+ }
+ .link a{
+    text-decoration: none;
+   color: #fff;
+   margin-bottom: 100px;
+ }
+ /*Button*/
+ .primary-btn{
+    padding: 10px 20px;
+    height: 30px;
+    display: block;
+    border: 0px;
+    border-radius: 2px;
+background-color: orange;
+color: #fff;
+text-decoration: none;
+cursor: pointer;
+text-align: center;
+transition: all 0.5s;
+width: 107%;
+}
+.primary-btn:hover{
+    background-color: #ff7b39;
+}
+/* sec-btn*/
+.sec-btn{
+    padding: 10px 20px;
+    height: 15px;
+    display: block;
+    background: none;
+    border: 1px solid orange;
+    border-radius: 2px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+    width: 60%;
+}
+.sec-btn:hover{
+    border-color: #ff7b39;
+    color: #ff7382;
+}
+ 
+#signin .or{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+      width: 250px;
+}
+#signin .or .bar{
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+}
+#signin .or span{
+    color: #aaa;
+    padding:0 5px 0 5px;
+}
+#showcase {
+    background-image: url("../img/bg-img.jpg");
+    height: 1000%;
+} 
+.showcase-content{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 200px;
+}
+ h1.showcase-text {
+  
+
+   
+}
+.box1{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 200px;
+}
+
+ /* Media Queries*/
+ @media(mix-width: 1200px){
+ #left{
+    flex: 4;
+ }
+ #right{
+    flex: 6;
+ }
+ }
